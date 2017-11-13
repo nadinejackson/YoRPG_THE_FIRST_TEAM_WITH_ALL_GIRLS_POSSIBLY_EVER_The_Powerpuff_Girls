@@ -1,17 +1,17 @@
 //THE FIRST TEAM WITH ALL GIRLS POSSIBLY EVER (The Powerpuff Girls) -- Nadine Jackson the Bold, T Fabiha, Soojin Choi
 //APCS1 pd2
-//HW28 -- Ye Olde Role Playing Game
-//2017-11-08  
+//HW31 -- Ye Olde Role Playing Game, Expanded
+//2017-11-13  
 
 public class Monster {
     //////////////
     //Attributes//
     //////////////
-    private String name;
-    private int HP;
-    private int strength;
-    private int defense;
-    private double attackRate;
+    protected String name;
+    protected int HP;
+    protected int strength;
+    protected int defense;
+    protected double attackRate;
 
     ///////////////
     //Constructor//
