@@ -4,13 +4,13 @@
 //2017-11-08   
 public class Protagonist{
 	//Attributes
-	private String name;
-	private int HP;
-	private int strength;
-	private int defense;
-	private int defenseStor;
-	private double attackRate;
-	private double attackStor;
+        protected  String name;
+        protected int HP;
+	protected int strength;
+	protected int defense;
+	protected int defenseStor;
+	protected double attackRate;
+	protected double attackStor;
 	
 	//Constructors
 	public Protagonist(){
