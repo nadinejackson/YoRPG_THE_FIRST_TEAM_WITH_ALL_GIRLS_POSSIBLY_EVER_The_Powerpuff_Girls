@@ -15,8 +15,8 @@ public class PocketMonsters extends Monster {
 	name = newName;
     }
 
-    public String about() {
-
+    public static String about() {
+	return "For 20 long years, the citizens of townsville have been opressed by the cruel creatures known as POKEMON.";
     }
 
     public static void main(String[] args) {
