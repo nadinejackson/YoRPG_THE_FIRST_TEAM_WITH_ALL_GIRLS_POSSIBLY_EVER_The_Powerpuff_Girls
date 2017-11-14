@@ -4,22 +4,20 @@
 //2017-11-08   
 public class Protagonist extends Character{
     //Attributes
-    //private String name;
-    //private int HP;
-    //private int strength;
-    //private int defense;
-    private int defenseStor;
-    //private double attackRate;
-    private double attackStor;
+    protected int defenseStor;
+    protected double attackStor;
 	
     //Constructors
     public Protagonist(){
-	super("Pat", 100, 50, 50, 0.5);
-        
+	HP = 100;
+	strength = 50;
+	defense = 50;
+	attackRate = 0.5;
+	name = "Pat";        
     }
     public Protagonist (String newName){
-	super(newName, 100, 50, 50, 0.5);
-        }
+	name = newName;
+    }
 	
     //Methods
     public void specialize(){
