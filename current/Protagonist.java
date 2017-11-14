@@ -2,7 +2,7 @@
 //APCS1 pd2
 //HW28 -- Ye Olde Role Playing Game
 //2017-11-08   
-public class Protagonist extends Character{
+public abstract class Protagonist extends Character{
     //Attributes
     protected int defenseStor;
     protected double attackStor;
@@ -20,15 +20,16 @@ public class Protagonist extends Character{
     }
 	
     //Methods
-    public void specialize(){
+    public abstract void specialize();/*{
         setDefense((int)(getDefense() / 2));
 	setAttackRate(getAttackRate() * 2);
-    }
-    public void normalize(){
-	setDefense(defenseStor);
-	setAttackRate(attackStor);
-    }
+	}*/
+    public abstract void normalize();//{
+	//setDefense(defenseStor);
+	//setAttackRate(attackStor);
+	//}
     //start of main method
+    public abstract String about();
     public static void main(String [] args){
 	System.out.println(" This works");
     }//end of the main method
