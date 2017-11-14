@@ -15,7 +15,7 @@ public class PlagueDoctor extends Protaganist{
 	name = newName;
     }
     
-    public String about(){
+    public static String about(){
 	return "In his/her fashionable beak mask, totally legit medical degree in hand, the Plague Doctor is ready to battle both disease and monsters. To be a Plague Doctor, one must have a strong sense of...humor. Armed with leeches and the unearned trust of the public, the Plague Doctor has such maxims to live by as: \"Don't hang around corpses, you idiot\" and \"Ew, don't drink that water. It's gross.\""; 
     }
 

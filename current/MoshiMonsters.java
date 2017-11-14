@@ -15,6 +15,6 @@ public class MoshiMonsters extends Monster {
 	name = newName;
     }
 
-    public String about(){
+    public static String about(){
 	return "";
 }

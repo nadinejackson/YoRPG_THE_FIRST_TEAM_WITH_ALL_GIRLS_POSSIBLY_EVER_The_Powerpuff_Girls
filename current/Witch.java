@@ -15,7 +15,7 @@ public class Witch extends Protaganist{
 	name = newName;
     }
 
-    public String about(){
+    public static String about(){
 	return "She was hanged for her crimes of \"existing\" and \"being annoying\", but she somehow managed to survive. She talks to herself and animals, and she says she's never been happier, attributing her power to those who tried to kill her. When asked if she felt bad about worshipping the devil for her power, she claimed that Earth during her trials was already Hell enough for her.";
     }
 
