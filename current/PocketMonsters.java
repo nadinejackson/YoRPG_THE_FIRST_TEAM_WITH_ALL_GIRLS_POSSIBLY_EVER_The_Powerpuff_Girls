@@ -16,7 +16,7 @@ public class PocketMonsters extends Monster {
     }
 
     public static String about() {
-	return "For 20 long years, the citizens of townsville have been opressed by the cruel creatures known as POKEMON.";
+	return "For 20 long years, the citizens of townsville have been opressed by the cruel creatures known as Pocket Monsters. They hide in the grass and pop out into existance in seemingly random times. They hold emmense power, of fire and ice, of light and dark, of life and death, and use this power to terrorize the all who are in their path.";
     }
 
     public static void main(String[] args) {
