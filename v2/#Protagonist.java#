@@ -4,7 +4,7 @@
 //2017-11-08   
 public class Protagonist extends Character{
     //Attributes
-    //private String name;
+    //protected String name;
     //private int HP;
     //private int strength;
     //private int defense;
