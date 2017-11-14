@@ -10,7 +10,7 @@ public class PocketMonsters extends Monster {
 	HP += 25;
     }
 
-    public PocketMonsters() {
+    public PocketMonsters(String newName) {
 	this();
 	name = newName;
     }

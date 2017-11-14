@@ -3,7 +3,7 @@
 //HW28 -- Ye Olde Role Playing Game, Extended
 //2017-11-13
 
-public class Witch extends Protaganist{
+public class Witch extends Protagonist{
 
     public Witch(){
 	super();

@@ -3,7 +3,7 @@
 //HW31 -- Ye Olde Role Playing Game, Expanded
 //2017-11-13   
 
-public class PlagueDoctor extends Protaganist{
+public class PlagueDoctor extends Protagonist{
     
     public PlagueDoctor(){
 	super();

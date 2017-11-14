@@ -22,6 +22,7 @@ public class YoRPG
   private int moveCount;
   private boolean gameOver;
   private int difficulty;
+    private int chara;
 
   private InputStreamReader isr;
   private BufferedReader in;
@@ -52,6 +53,7 @@ public class YoRPG
   {
     String s;
     String name = "";
+    String about = "";
     s = "~~~ Welcome to Ye Olde RPG! ~~~\n";
 
     s += "\nChoose your difficulty: \n";
@@ -73,10 +75,34 @@ public class YoRPG
 	    name = in.readLine();
     }
     catch ( IOException e ) { }
+    
+   
 
+    s = "\nChoose your player class: \n";
+    s += "\t1: Mafia\n";
+    s += "\t2: Plague Doctor\n";
+    s += "\t3: Witch\n";
+    s += "Selection: ";
+    System.out.print( s );
+
+    try {
+	    difficulty = Integer.parseInt( in.readLine() );
+    }
+    catch ( IOException e ) { }
+
+    
     //instantiate the player's character
-    pat = new Protagonist( name );
-
+    //pat = new Protagonist( name );
+    if (chara == 1) {
+	pat = new Mafia(name);
+	System.out.println(((Mafia)pat).about());
+	about = ((Mafia)pat).about();
+    } else if (chara == 2) {
+	pat = new PlagueDoctor(name);
+    } else {
+	pat = new Witch(name);
+    }
+    
   }//end newGame()
 
 
@@ -90,13 +116,26 @@ public class YoRPG
   {
     int i = 1;
     int d1, d2;
+    int rand = (int) (Math.random() * 3);
+    String monsterType = ""; 
 
     if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "\nNothing to see here. Move along!" );
     else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
 
-	    smaug = new Monster();
+	    if (rand == 0) {
+		smaug = new MoshiMonsters();
+		monsterType = "Moshi Monster";
+	    } else if (rand == 1) {
+		smaug = new PocketMonsters();
+		monsterType = "Pocket Monster";
+	    } else {
+		smaug = new DigitalMonsters();
+		monsterType = " Digital Monster";
+	    }
+
+	    System.out.println("\nIt is a "+monsterType+".");
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
