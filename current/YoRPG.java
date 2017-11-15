@@ -136,7 +136,7 @@ public class YoRPG
 		monsterType = "Pocket Monster";
 	    } else {
 		smaug = new DigitalMonsters();
-		monsterType = " Digital Monster";
+		monsterType = "Digital Monster";
 	    }
 
 	    System.out.println("\nIt is a "+monsterType+".");
