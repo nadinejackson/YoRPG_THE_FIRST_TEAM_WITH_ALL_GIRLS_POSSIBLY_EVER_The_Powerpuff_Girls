@@ -12,3 +12,16 @@ Players of this RPG choose when to use a special attack on an approaching monste
    * The **Moshi Monsters**, being so cute, have a higher defense.
    * The **Pocket Monsters**, having the power to pop up at random times, have a higher HP.
    * The **Digital Monsters**, under the control of four evil overlords, have a higher strength.
+
+### Plans for Version 5
+1. Adding a different special and normal attack upgrades between the different Protagonist subclasses.
+2. Having functionality for winning the game.
+3. Adding the special method to win instantly(?)
+4. A special method that can be used after a certain amount of turns(?)
+
+### Code Restructions
+
+### How To Play
+  * Begin the game by choosing the difficulty. You have the choice between easy, not so easy, and Bewulf hath nothing on me. Bring it on. State your name and the type of Protagonist you would like to be. 
+  * The game will then reveal the monster that you have to defeat. Choose between lucky and not lucky and see the results of the battle.
+
