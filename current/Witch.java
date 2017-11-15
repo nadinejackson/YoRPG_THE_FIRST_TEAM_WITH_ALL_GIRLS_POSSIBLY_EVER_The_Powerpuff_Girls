@@ -15,14 +15,14 @@ public class Witch extends Protagonist{
 	name = newName;
     }
     public void specialize(){
-        setDefense((int)(getDefense() / 2));
-	setAttackRate(getAttackRate() * 2);
+        defense = defense / 2;
+	attackRate = attackRate * 2;
     }
     public void normalize(){
-	setDefense(defenseStor);
-	setAttackRate(attackStor);
+	defense = defenseStor;
+	attackRate = attackStor;
     }
-    public static String about(){
+    public String about(){
 	return "She was hanged for her crimes of \"existing\" and \"being annoying\", but she somehow managed to survive. She talks to herself and animals, and she says she's never been happier, attributing her power to those who tried to kill her. When asked if she felt bad about worshipping the devil for her power, she claimed that Earth during her trials was already Hell enough for her.";
     }
 

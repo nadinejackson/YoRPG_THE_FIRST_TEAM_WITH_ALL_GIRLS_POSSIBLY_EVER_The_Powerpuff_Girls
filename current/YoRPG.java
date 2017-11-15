@@ -94,14 +94,16 @@ public class YoRPG
     //pat = new Protagonist( name );
     if (chara == 1) {
 	pat = new Mafia(name);
-	about = Mafia.about();
+	//about = Mafia.about();
     } else {if (chara == 2) {
 	pat = new PlagueDoctor(name);
-	about = PlagueDoctor.about();
+	//about = PlagueDoctor.about();
     } else {
 	pat = new Witch(name);
-	about = Witch.about();
-	}}
+	//about = Witch.about();
+    }}
+
+    about = pat.about();
 
     System.out.println(about);
     
