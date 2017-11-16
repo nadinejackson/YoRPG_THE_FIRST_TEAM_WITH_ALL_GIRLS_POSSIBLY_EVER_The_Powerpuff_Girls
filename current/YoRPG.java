@@ -1,3 +1,7 @@
+//THE FIRST TEAM WITH ALL GIRLS POSSIBLY EVER (The Powerpuff Girls) -- Nadine Jackson the Bold, T Fabiha, Soojin Choi
+//APCS1 pd2
+//HW33 -- Ye Olde Role Playing Game, Realized
+//2017-11-15
 /**********************************************
  * class YoRPG -- Driver file for Ye Olde Role Playing Game.
  * Simulates monster encounters of a wandering adventurer.
@@ -22,7 +26,9 @@ public class YoRPG
   private int moveCount;
   private boolean gameOver;
   private int difficulty;
-    private int chara;
+  private int chara;
+    private String chargeBar;
+    private int counter = 0;
 
   private InputStreamReader isr;
   private BufferedReader in;
@@ -78,7 +84,7 @@ public class YoRPG
     
    
 
-    s = "\nChoose your player class: \n";
+    s = "\nWhat form of warrior shall you take on this grueling fight aganist unknown and unseen foes? A cruel Mafia, a powerful Witch, or an all-knowing Plague Doctor?  \n";
     s += "\t1: Mafia\n";
     s += "\t2: Plague Doctor\n";
     s += "\t3: Witch\n";
@@ -149,14 +155,28 @@ public class YoRPG
         try {
           System.out.println( "\nDo you feel lucky?" );
           System.out.println( "\t1: Nay.\n\t2: Aye!" );
-          i = Integer.parseInt( in.readLine() );
+	  if ((counter%3 == 0) && (counter != 0)) {
+	      System.out.println( "\t3: Or you can use your Special Attack!");
+	  }
+	  i = Integer.parseInt( in.readLine() );
+	  
         }
         catch ( IOException e ) { }
 
-        if ( i == 2 )
-          pat.specialize();
-        else
-          pat.normalize();
+        if ( i == 2 ) {
+	    pat.specialize();
+	}
+        else if ( i == 4 ){
+	    smaug.instantKill();
+	    System.out.println("You have found the power from the heavens and killed the monster with one blow.");
+	    return false;
+	}
+	else if ((i == 3) && ((counter%3 == 0) && (counter != 0))){
+	    pat.specialAttack();
+	}
+	else {
+	    pat.normalize();
+	}
 
         d1 = pat.attack( smaug );
         d2 = smaug.attack( pat );
@@ -166,6 +186,15 @@ public class YoRPG
 
         System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
                             " for " + d2 + " points of damage.");
+	counter += 1;
+	
+	if ((counter%3 == 0) && (counter != 0)){
+	    chargeBar = "full! \t Next round you will have the chance for a special attack!";
+	}
+	else {
+	    chargeBar = "" + (counter%3) + "/3 " + "full";
+	System.out.println("\n" + "Your special attack is " + chargeBar + "!" );
+	}
 	    }//end while
 
 	    //option 1: you & the monster perish

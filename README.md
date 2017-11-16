@@ -1,17 +1,9 @@
-# yoRPG_THE_FIRST_TEAM_WITH_ALL_GIRLS_POSSIBLY_EVER_The_Powerpuff_Girls-
+# YoRPG_THE_FIRST_TEAM_WITH_ALL_GIRLS_POSSIBLY_EVER_The_Powerpuff_Girls
+## Nadine Jackson, T. Fabiha, Soojin Choi
 An amazing new role-playing game with epic battles, satisfying victories, and crushing losses.
 
 Players of this RPG choose when to use a special attack on an approaching monster and either **slay the monster** or _die themselves_.
 
-### What's New in Version 3?
-1. New **types of Protagonists** allow the user to choose between the Mafia, [Plague Doctor](https://en.wikipedia.org/wiki/Plague_doctor "The Fashionable Beak People") and Witch.
-   * The **witch**, with her experience in surviving a hanging, has a higher defense.
-   * The **plague doctor**, with his/her ~~totally unquestionable~~ doctoring methods and fabulous mask, has a higher HP.
-   * The **mafia** is a stone cold killer who inflicts more damage than other Protagonists.
-2. New **types of Monsters** will pop up, one being a Moshi Monster, and the other two being Pocket Monsters and Digital Monsters.
-   * The **Moshi Monsters**, being so cute, have a higher defense.
-   * The **Pocket Monsters**, having the power to pop up at random times, have a higher HP.
-   * The **Digital Monsters**, under the control of four evil overlords, have a higher strength.
 
 ### Plans for Version 5
 1. Adding a different special and normal attack upgrades between the different Protagonist subclasses.
@@ -26,5 +18,16 @@ Players of this RPG choose when to use a special attack on an approaching monste
 
 ### How To Play
   * Begin the game by choosing the difficulty. You have the choice between easy, not so easy, and Bewulf hath nothing on me. Bring it on. State your name and the type of Protagonist you would like to be. Your choices are a Mafia, Plague Doctor and Witch.
-  * The game will then reveal the monster that you have to defeat. Choose between lucky and not lucky and see the results of the battle. If you run though 3 times with the monster, you will then be allowed to use a special attack specific to the class.
+  * The game will then reveal the monster that you have to defeat. Choose between lucky and not lucky and see the results of the battle. If you battle 3 times with the monster, you will then be allowed to use a special attack specific to the class.
 
+
+
+### What's New in Version 3?
+1. New **types of Protagonists** allow the user to choose between the Mafia, [Plague Doctor](https://en.wikipedia.org/wiki/Plague_doctor "The Fashionable Beak People") and Witch.
+   * The **witch**, with her experience in surviving a hanging, has a higher defense.
+   * The **plague doctor**, with his/her ~~totally unquestionable~~ doctoring methods and fabulous mask, has a higher HP.
+   * The **mafia** is a stone cold killer who inflicts more damage than other Protagonists.
+2. New **types of Monsters** will pop up, one being a Moshi Monster, and the other two being Pocket Monsters and Digital Monsters.
+   * The **Moshi Monsters**, being so cute, have a higher defense.
+   * The **Pocket Monsters**, having the power to pop up at random times, have a higher HP.
+   * The **Digital Monsters**, under the control of four evil overlords, have a higher strength.

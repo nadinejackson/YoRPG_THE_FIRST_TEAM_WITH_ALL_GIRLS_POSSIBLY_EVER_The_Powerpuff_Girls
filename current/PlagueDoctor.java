@@ -1,7 +1,7 @@
 //THE FIRST TEAM WITH ALL GIRLS POSSIBLY EVER (The Powerpuff Girls) -- Nadine Jackson the Bold, T Fabiha, Soojin Choi
 //APCS1 pd2
-//HW31 -- Ye Olde Role Playing Game, Expanded
-//2017-11-13   
+//HW33 -- Ye Olde Role Playing Game, Realized
+//2017-11-15
 
 public class PlagueDoctor extends Protagonist{
     
@@ -15,7 +15,11 @@ public class PlagueDoctor extends Protagonist{
 	name = newName;
     }
     public void specialize(){
-	defense = defense / 2;
+	setDefense((int)(getDefense() / 2));
+	setAttackRate(getAttackRate() * 2);
+    }
+    public void specialAttack(){
+	defense = (int) (defense * 1.25); //HP is higher so defense increases
 	attackRate = attackRate * 2;
     }
     public void normalize(){

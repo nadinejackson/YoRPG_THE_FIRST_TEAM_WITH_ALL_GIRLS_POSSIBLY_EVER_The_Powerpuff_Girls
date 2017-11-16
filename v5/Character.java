@@ -58,6 +58,15 @@ public class Character{
 	}
     }
 
+    public static int abs(int num)
+    {
+	if (num >= 0)
+	    {
+		return num;
+	    }
+	return num * -1;
+    }
+
     public void setDefense(int newDefense) {
 	defense = newDefense;
     }
@@ -67,7 +76,7 @@ public class Character{
     }
     
     public int attack(Character propro) {
-	int damage = (int)(strength * attackRate) - propro.getDefense();
+	int damage = abs((int)(strength * attackRate) - propro.getDefense());
 	propro.lowerHP(damage);
 	return damage;
     }
