@@ -1,7 +1,7 @@
 //THE FIRST TEAM WITH ALL GIRLS POSSIBLY EVER (The Powerpuff Girls) -- Nadine Jackson the Bold, T Fabiha, Soojin Choi
 //APCS1 pd2
-//HW32 -- Ye Olde Role Playing Game, Unchained
-//2017-11-14
+//HW33 -- Ye Olde Role Playing Game, Realized
+//2017-11-15
 
 public class Witch extends Protagonist{
 
@@ -15,8 +15,12 @@ public class Witch extends Protagonist{
 	name = newName;
     }
     public void specialize(){
+	setDefense((int)(getDefense() / 2));
+	setAttackRate(getAttackRate() * 2);
+    }
+    public void specialAttack(){
 	attackRate = attackRate * 1.5;
-	defense = defense / 2 + 10;
+	defense = defense * 2 + 10;// specialize in defense.
     }
     public void normalize(){
 	defense = defenseStor;

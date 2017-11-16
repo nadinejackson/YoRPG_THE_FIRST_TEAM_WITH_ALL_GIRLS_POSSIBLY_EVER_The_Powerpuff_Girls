@@ -1,7 +1,7 @@
 //THE FIRST TEAM WITH ALL GIRLS POSSIBLY EVER (The Powerpuff Girls) -- Nadine Jackson the Bold, T Fabiha, Soojin Choi
 //APCS1 pd2
-//HW32 -- Ye Olde Role Playing Game, Unchained
-//2017-11-14
+//HW33 -- Ye Olde Role Playing Game, Realized
+//2017-11-15
 public class Character{
     //////////////
     //Attributes//
@@ -70,6 +70,9 @@ public class Character{
 	int damage = (int)(strength * attackRate) - propro.getDefense();
 	propro.lowerHP(damage);
 	return damage;
+    }
+    public void instantKill(){
+	HP = 0; //sets HP to 0, killing instantly
     }
 
     //main method
