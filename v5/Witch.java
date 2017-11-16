@@ -15,8 +15,8 @@ public class Witch extends Protagonist{
 	name = newName;
     }
     public void specialize(){
-        defense = defense / 2;
-	attackRate = attackRate * 2;
+	attackRate = attackRate * 1.5;
+	defense = defense / 2 + 10;
     }
     public void normalize(){
 	defense = defenseStor;
